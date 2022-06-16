@@ -13,3 +13,5 @@ export const useAuth = () => {
 
 
 };
+
+// get info about auth
