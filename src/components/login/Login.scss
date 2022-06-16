@@ -1,0 +1,116 @@
+
+.error {
+  color: red;
+  font-weight: 800;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+  font-size: 10px;
+  transition: 0.3s;
+}
+
+.loginWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . . ."
+    ". l l l ."
+    ". l l l ."
+    ". . . . .";
+
+}
+
+;
+
+
+.inputWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "e e e e"
+    "p p p p"
+    "chB chB chB chB"
+    "s s s s"
+    "ad ad ad ad";
+  grid-area: l;
+  gap: 15px 15px;
+  align-self: center;
+  justify-self: center;
+  margin-top: 80px;
+}
+
+;
+
+
+.emailInputStyle {
+  grid-area: e;
+
+
+  input {
+    margin-left: 10px;
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid #bdb8b8;
+    background: transparent;
+    outline: none;
+    transition: 0.3s;
+
+    &:focus{
+      border-bottom: 1px solid black;
+
+
+    }
+  }
+
+
+}
+
+.passwordInputStyle {
+  grid-area: p;
+
+  input {
+    margin-left: 10px;
+    width: 65%;
+    border: none;
+    border-bottom: 1px solid #bdb8b8;
+    background: transparent;
+    outline: none;
+    transition: 0.3s;
+
+    &:focus{
+      border-bottom: 1px solid black;
+
+
+    }
+
+  }
+}
+
+.checkBoxStyle {
+  grid-area: chB;
+}
+
+.submitButtonStyle {
+  grid-area: s;
+
+  input{
+    outline: none;
+    background: #464444;
+    color: white;
+    border-radius: 6px;
+
+
+    &:hover{
+      background: black;
+    }
+
+  }
+
+
+}
+
+.additionalStyle {
+  grid-area: ad;
+}

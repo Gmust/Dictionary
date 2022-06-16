@@ -1,0 +1,110 @@
+
+
+
+
+
+.signUpWrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1.1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . . ."
+    ". r r r ."
+    ". r r r ."
+    ". . . . .";
+};
+
+.signUpInputWrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "e e e"
+    "p p p"
+    "cp cp cp"
+    "s s s";
+  grid-area: r;
+  align-self: center;
+  justify-self: center;
+  margin-top: 80px;
+};
+
+.emailRegisterInputStyle {
+  grid-area: e;
+
+  input {
+    margin-left: 10px;
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid #bdb8b8;
+    background: transparent;
+    outline: none;
+    transition: 0.3s;
+
+    &:focus {
+      border-bottom: 1px solid black;
+
+    }
+
+  } ;
+}
+
+.passwordRegisterInputStyle{
+  grid-area: p;
+  input {
+    margin-left: 10px;
+    width: 65%;
+    border: none;
+    border-bottom: 1px solid #bdb8b8;
+    background: transparent;
+    outline: none;
+    transition: 0.3s;
+
+    &:focus{
+      border-bottom: 1px solid black;
+
+
+    }
+
+  }
+};
+
+.passwordConfirmInputStyle{
+  grid-area: cp;
+  input {
+    margin-left: 10px;
+    width:50%;
+    border: none;
+    border-bottom: 1px solid #bdb8b8;
+    background: transparent;
+    outline: none;
+    transition: 0.3s;
+
+    &:focus{
+      border-bottom: 1px solid black;
+
+
+    }
+
+  }
+}
+
+.submitRegisterButtonStyle{
+  grid-area: s;
+  input{
+    outline: none;
+    background: #464444;
+    color: white;
+    border-radius: 6px;
+
+
+    &:hover{
+      background: black;
+    }
+
+  }
+}
